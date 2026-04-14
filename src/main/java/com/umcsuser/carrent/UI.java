@@ -70,7 +70,7 @@ public class UI {
             System.out.println(vehicleService.findAllVehicles());
 
         } catch (NumberFormatException e) {
-            System.out.println("Błąd: Wprowadzono tekst zamiast liczby! Spróbuj ponownie.");
+            e.printStackTrace();
         } catch (Exception e) {
             System.out.println("Błąd: " + e.getMessage());
         }
