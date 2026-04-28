@@ -68,7 +68,7 @@ class VehicleValidatorTest {
                 .price(300.0)
                 .build();
 
-        vehicle.addAttribute("seats", 50);
+        vehicle.addAttribute("seats", 50.00);
 
         assertDoesNotThrow(() -> validator.validate(vehicle));
     }
